@@ -3,7 +3,6 @@ pipeline {
     
     parameters {
         string(name: 'GREETING', defaultValue: 'Hello', description: 'Greeting message')
-        string(name: 'NAME', defaultValue: 'User name', description: 'Greeting message')
         choice(name: 'ENVIRONMENT', choices: ['DEV', 'QA', 'PROD'], description: 'Environment to deploy')
         booleanParam(name: 'DEBUG', defaultValue: true, description: 'Enable debug mode')
     }
